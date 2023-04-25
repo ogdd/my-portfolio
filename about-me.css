@@ -4,4 +4,31 @@
 
 body {
     font-family: monospace;
+    background-color: beige;
+    
+}
+
+.header-nav {
+    position: fixed;
+    float: top;
+    height: 70%;
+    display: block;
+    background-color: rgb(197, 199, 204);
+    padding-right: 20px;
+
+
+}
+
+main {
+    margin-left: 190px;
+}
+
+#short-intro, #contact-me, #languages, #projects {
+    background-color: black;
+    color: white;
+    border: solid salmon;
+    padding: 10px;
+    z-index: 1;
+    width: 60%;
+    margin: auto;
 }
