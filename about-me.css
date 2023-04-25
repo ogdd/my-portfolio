@@ -15,6 +15,7 @@ body {
     display: block;
     background-color: rgb(197, 199, 204);
     padding-right: 20px;
+    border: 5px solid red;
 
 
 }
@@ -31,4 +32,31 @@ main {
     z-index: 1;
     width: 60%;
     margin: auto;
+}
+
+#reviews {
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
+
+form {
+    text-align:center;
+    background-color: black;
+    color: white;
+    border: solid salmon;
+    padding: 10px;
+    z-index: 1;
+    width: 60%;
+    margin: auto;
+}
+
+a {
+    color:rgb(39, 7, 7);
+    font-family: monospace;
+    font-weight: 900;
+}
+form > input {
+    width:50px;
+    text-align: center;
 }
