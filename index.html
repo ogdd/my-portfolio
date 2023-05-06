@@ -10,61 +10,59 @@
             <h1 id="about-me" class="main-header">About Me</h1>
         </header>
         <nav class="header-nav">
-            <header id="header-navig">
-                <h2>Navigation</h2>
-            </header>
             <ul id="header-nav-list">
-                <li><a href="#about-me">About Me</a></li><br>
-                <li><a href="#languages">Languages</a></li><br>
-                <li><a href="#projects">Projects</a></li><br>
-                <li><a href="#contact-me">Contact Me</a></li><br>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
         <main>
-            <div id="short-intro">
-                <h4>Short Introduction</h4>
-                <p>I am currently residing in Lisbon and looking to switch to Web Development career</p>
-                <p>Being studied Mechanical Engineering, I had to chance to get into coding with <strong>Pyhton</strong> and <strong>Ardiuno</strong>.</p>
-                <p>Currently I am working in Customer Support field but trying to learn <em>Javascript, CSS & Html </em>Languages.</p>
+            <div id="container" class="container">
+                <div class="short-intro">
+                    <h4>Short Introduction</h4>
+                    <p>I am currently residing in Lisbon and looking to switch to Web Development career</p>
+                    <p>Being studied Mechanical Engineering, I had to chance to get into coding with <strong>Pyhton</strong> and <strong>Ardiuno</strong>.</p>
+                    <p>Currently I am working in Customer Support field but trying to learn <em>Javascript, CSS & Html </em>Languages.</p>
+                </div>
+                
+                <div id="languages" class="languages">
+                    <h4>Languages</h4>
+                    <ol type="i">
+                        <li>Pyhton</li>
+                        <li>Arduino(Variant of C++)</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Html</li>
+                    </ol>
+                </div>
+                <div id="projects" class="projects">
+                    <h4>Projects</h4>
+                    <p>Participated in Eurobot 2018 and built a functional robot for collecting material from the test area.</p>
+                    <p>Developed a Catapult where the required force calculations were process by the code built on Python</p>
+                    <p>Check out <a href="https://github.com/ogdd">my github profile</a> for my web designs sor far!</p>
+                    <img src="Ero.jpg" alt="Mighty Robot" width="300" height="300">
+                    <video width="320" height="240" controls autoplay muted loop>
+                        <source src="eurobotvideo.mp4" type="video/mp4;codecs="avc1.42E01E, mp4a.40.2"">
+
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="firstweb.png" alt="My First Website" width="300" height="300">
+                </div>
+                <div id="contact-me" class="contact-me">
+                    <h4>Contact Me by the Channels below:</h4>
+                    <ul>
+                        <li><a href="github.com/ogdd" type="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/olgu-dolu-573075151/">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <form action="">
+                    <label for="reviews">Please Share your Feedback;</label><br>
+                    <textarea id="reviews" cols="80" rows="20">You can share your what can be done to improve user experience...
+                    </textarea><br>
+                    <input type="button" value="Submit" class="submit-button">
+                </form>
             </div>
-            <br><br>
-            <div id="languages">
-                <h4>Languages</h4>
-                <ol type="i">
-                    <li>Pyhton</li>
-                    <li>Arduino(Variant of C++)</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Html</li>
-                </ol>
-            </div><br><br>
-            <div id="projects">
-                <h4>Projects</h4>
-                <p>Participated in Eurobot 2018 and built a functional robot for collecting material from the test area.</p>
-                <p>Developed a Catapult where the required force calculations were process by the code built on Python</p>
-                <p>Check out <a href="https://github.com/ogdd">my github profile</a> for my web designs sor far!</p>
-                <img src="Ero.jpg" alt="Mighty Robot" width="300" height="300">
-                <video width="320" height="240" controls autoplay muted loop>
-                    <source src="eurobotvideo.mp4" type="video/mp4;codecs="avc1.42E01E, mp4a.40.2"">
-                    
-                    Your browser does not support the video tag.
-                </video>
-                <img src="firstweb.png" alt="My First Website" width="300" height="300">
-            </div><br><br>
-            <div id="contact-me">
-                <h4>Contact Me by the Channels below:</h4>
-                <ul>
-                    <li><a href="github.com/ogdd" type="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/olgu-dolu-573075151/">LinkedIn</a></li>
-                </ul>
-            </div><br><br>
-            <form action="">
-                <label for="reviews">Please Share your Feedback;</label><br>
-                <textarea id="reviews" cols="80" rows="20">
-                    You can share your what can be done to improve user experience...
-                </textarea><br>
-                <input tpye="button" value="Submit" class="submit-button">
-            </form>
         </main>
     </body>
 </html>
