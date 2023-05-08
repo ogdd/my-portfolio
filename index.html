@@ -19,7 +19,7 @@
         </nav>
         <main>
             <div id="container" class="container">
-                <div class="short-intro">
+                <div class="short-intro" id="short-intro">
                     <h4>Short Introduction</h4>
                     <p>I am currently residing in Lisbon and looking to switch to Web Development career</p>
                     <p>Being studied Mechanical Engineering, I had to chance to get into coding with <strong>Pyhton</strong> and <strong>Ardiuno</strong>.</p>
@@ -28,7 +28,7 @@
                 
                 <div id="languages" class="languages">
                     <h4>Languages</h4>
-                    <ol type="i">
+                    <ol type="A">
                         <li>Pyhton</li>
                         <li>Arduino(Variant of C++)</li>
                         <li>CSS</li>
@@ -56,11 +56,23 @@
                         <li><a href="https://www.linkedin.com/in/olgu-dolu-573075151/">LinkedIn</a></li>
                     </ul>
                 </div>
-                <form action="">
-                    <label for="reviews">Please Share your Feedback;</label><br>
-                    <textarea id="reviews" cols="80" rows="20">You can share your what can be done to improve user experience...
-                    </textarea><br>
-                    <input type="button" value="Submit" class="submit-button">
+                <form action="" method="post" id="submit-form">
+                    <ul id="feedback-info">
+                        <li>
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" value="John">
+                        </li>
+                        <li>
+                            <label for="email">E-mail Address:</label>
+                            <input id="email" type="email" value="xxxx@xxx.xx">
+                        </li>
+                        <li>
+                            <label for="reviews">Please Share your Feedback;</label><br>
+                            <textarea id="reviews" cols="80" rows="20">You can share your what can be done to improve user experience...
+                            </textarea><br>
+                            <input type="submit" value="Submit" class="submit-button">
+                        </li>
+                    </ul>
                 </form>
             </div>
         </main>

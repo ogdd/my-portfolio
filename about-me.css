@@ -8,16 +8,44 @@ body {
     
 }
 
+header {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
 a {
     color:rgb(154, 156, 14);
     font-family: monospace;
     font-weight: 900;
 }
+
 img {
     height: 30%;
     width: 30%;
 }
 
+form {
+    text-align:center;
+    background-color: black;
+    color: white;
+    border: solid salmon;
+    padding: 10px;
+    z-index: 1;
+    width: 60%;
+    margin: auto;
+}
+
+form > input {
+    width: 50px;
+    text-align: center;
+}
+
+form > ul > li {
+    background-color: gray;
+    margin: 10px;
+    list-style-type: none;
+    padding: 2%;
+}
 
 .header-nav {
     position: fixed;
@@ -72,26 +100,11 @@ img {
     width: 70%;
 }
 
-form {
-    text-align:center;
-    background-color: black;
-    color: white;
-    border: solid salmon;
-    padding: 10px;
-    z-index: 1;
-    width: 60%;
-    margin: auto;
-}
-
-
-form > input {
-    width: 50px;
-    text-align: center;
-}
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: space-around;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -100,7 +113,7 @@ form > input {
     .languages,
     .projects,
     form {
-        width: 90;
+        width: 90%;
     }
 
 
@@ -108,12 +121,13 @@ form > input {
 
         color: rgb(255, 255, 255);
         text-align: center;
-        padding: 14px 16px;
+        padding: 30px 30px;
         text-decoration: none;
 
     }
     #header-nav-list li {
         display: inline-block; /* Display list items inline */
+        font-size: 200%;
     }
 
     .short-intro {
@@ -124,7 +138,7 @@ form > input {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #c50505;
+        background-color: saddlebrown;
         position: fixed;
         top: 0;
         width: 100%;
@@ -134,10 +148,11 @@ form > input {
 
 @media only screen and (min-width: 1200px) {
 
-    
+
+
     #header-nav-list a {
         position: absolute; /* Position them relative to the browser window */
-        left: -60px; /* Position them outside of the screen */
+        left: -40px; /* Position them outside of the screen */
         transition: 0.6s; /* Add transition on hover */
         width: auto; /* Set a specific width */
         text-decoration: none; /* Remove underline */
@@ -146,23 +161,23 @@ form > input {
         background-color: black;
         border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
       }
+
       
     #header-nav-list a:hover {
-        left: 0px; /* On mouse-over, make the elements appear as they should */
+        left: 20px; /* On mouse-over, make the elements appear as they should */
         font-size: 30px;
-        width:auto;
+        width: auto;
+        transform: scale(1.5,1.5);
       }
     #header-nav-list {
         line-height: 30px;
     }
     .short-intro,
     .languages,
-
     .contact-me,
     form {
-        width: 30%;
+        width: 40%;
     }
-
     .projects {
         width: 80%;
     }
@@ -172,6 +187,23 @@ form > input {
         flex-direction: row;
     }
 
-
+    img:hover {
+        transform: scale(1.25,1.25);
+    }
+    #short-intro{
+        order: 0;
+    }
+    #languages{
+        order: 0;
+    }
+    #projects{
+        order: 2;
+    }
+    #contact-me{
+        order: 1;
+    }
+    #submit-form{
+        order:2;
+    }
 }
 
